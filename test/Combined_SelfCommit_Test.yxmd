@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_67092_33d420690d0bf040bfaa0577938adf38_\Engine_67092_7295cc3b10054248ac3adf863f9e9b1c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings>
+        <Position x="474" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Radio Button (324)">True</Value>
+          <Value name="Drop Down (325)">FullPath</Value>
+          <Value name="Drop Down (328)">TargetPath</Value>
+          <Value name="Radio Button (323)">False</Value>
+          <Value name="Text Box (341)">gitmacro-testing</Value>
+          <Value name="Check Box (286)">False</Value>
+          <Value name="Text Box (43)">andlloyd1</Value>
+          <Value name="Text Box (44)">gitmacro-testing</Value>
+          <Value name="Text Box (120)">main</Value>
+          <Value name="Check Box (123)">False</Value>
+          <Value name="Text Box (219)">Directory Commit</Value>
+          <Value name="Text Box (41)">https://api.github.com/</Value>
+          <Value name="Text Box (118)">43502B5375A9AFDDBA779493817BD493207132E2A3F93673F31A72DE4C32A797AFA9CC415AC7E32E4C59717B85D01A4BE888F2105694AFC1F8D55C3B1A51FB2387356EDF2DA56D1BE5FE6AA46BB762236844A60A4C5B74F4609379D5BE55CE969294A91F1A36F9A052FCDA062A5B1E764948DF8041B04DED52B20CFB32977C5672FE967EE4952EAAA628FB579D0FC7EF1B7DB97D2063C9BA40FF9A03846D015A322F9064707A8785B10123D61F0EFCD091A8F1A608257A7195791EC3BF4BA180A38770365F0BC6116A6733AA36821DF2248968EEB60325CD511207C74363E19C259A9B226356EFB7F84730304A140801AD10148F8302769DD22C4C29A78A9283A3F5FA51E9DE33D57782E138B21BDC093F9714E7751DFBDBF895B4E16011A8C5E9D00A0AB62F515043458F5414F3C3F4F829EAC0865523F4A92BC94F1CD3A49745332C4C7186120A9D8BA871879B92AA74327358FD1C0</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>GitHubCommit_Combined (10)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="C:\Users\alloyd\OneDrive - alteryx.com\Desktop\Workflow Integrations\Enterprise Utilities\Git Integration\GitHubCommit_Combined.yxmc" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="90" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>C:\Users\alloyd\OneDrive - alteryx.com\Desktop\Workflow Integrations\Enterprise Utilities\Git Integration\Testing</Directory>
+          <FileSpec>*.*</FileSpec>
+          <IncludeSubDirs value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dir C:\Users\alloyd\OneDrive - alteryx.com\Desktop\Workflow Integrations\Enterprise Utilities\Git Integration\Testing\*.*</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="282" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'gitmacro-testing/'" field="TargetPath" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[TargetPath = 'gitmacro-testing/'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="186" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="378" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Directory" selected="False" />
+            <SelectField field="FileName" selected="False" />
+            <SelectField field="ShortFileName" selected="False" />
+            <SelectField field="CreationTime" selected="False" />
+            <SelectField field="LastAccessTime" selected="False" />
+            <SelectField field="LastWriteTime" selected="False" />
+            <SelectField field="Size" selected="False" />
+            <SelectField field="AttributeArchive" selected="False" />
+            <SelectField field="AttributeCompressed" selected="False" />
+            <SelectField field="AttributeEncrypted" selected="False" />
+            <SelectField field="AttributeHidden" selected="False" />
+            <SelectField field="AttributeNormal" selected="False" />
+            <SelectField field="AttributeOffline" selected="False" />
+            <SelectField field="AttributeReadonly" selected="False" />
+            <SelectField field="AttributeReparsePoint" selected="False" />
+            <SelectField field="AttributeSparseFile" selected="False" />
+            <SelectField field="AttributeSystem" selected="False" />
+            <SelectField field="AttributeTemporary" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="20" Connection="Output254" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="20" Connection="Input5" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Combined_SelfCommit_Test</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="10a864c2-721f-4de8-bff2-062237c4796c" />
+      <Telemetry>
+        <PreviousWorkflowId value="656140ec-94f9-41b4-8e3c-15607bdf6eb0" />
+        <OriginWorkflowId value="656140ec-94f9-41b4-8e3c-15607bdf6eb0" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

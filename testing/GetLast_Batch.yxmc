@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings>
+        <Position x="618" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Text Box (41)">https://api.github.com/</Value>
+          <Value name="Text Box (43)">andlloyd1</Value>
+          <Value name="Text Box (44)">workflowintegrations</Value>
+          <Value name="Text Box (118)">438C2DCBF86C909F4A653FE886DD220A77AE6295604D4257AA95CFEA709B1795727D898172A43BE3E6AE74F70D81531A9580D5CFF81BC5A38F7D410554BA39DDCB598F2714B9EC61BC8D12FF43CD3E091748A7749553D4027BE966CFAEBCDC800E14B19FDA3492CDC6C866B067A4B4A5098CCB4FECFC6E35A592DF28C22FAD0386802FDDE405B91B43B5671299994BC949B571E8D8DE3E080DD412F758BB259D724B42873E8E31F6258B87B672A91EA205647CB92EEECF5DEF5B3328946EC7DE3EB3A7879E28B9811E472465F475D28D47AC0DF1B4AA5D92EC8732D346835DDA00377884C0B1D0FD0D06891B6E74F9B259541BE933158C632E124E33FAE2564E5FFAD2FF27541460E977E31F1127CAABC0802D53AF97D7968B05BA611739BFD91B2096306691D3900DCC1A28839EC92B01CCE44EFDDBFBCC19918A999305A2853EACAC480E0FEC2EFE530C8BEC690A47A98B39F2D549D</Value>
+          <Value name="Text Box (120)">main</Value>
+          <Value name="Check Box (123)">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="API Response">
+          <RecordInfo>
+            <Field name="base URL" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="name" size="512" source="CrossTab:Header:JSON_Name:name:Concat:" type="V_WString" />
+            <Field name="commit_commit_message" size="512" source="CrossTab:Header:JSON_Name:commit.commit.message:Concat:" type="V_WString" />
+            <Field name="commit_commit_author_name" size="512" source="CrossTab:Header:JSON_Name:commit.commit.author.name:Concat:" type="V_WString" />
+            <Field name="commit_commit_author_email" size="512" source="CrossTab:Header:JSON_Name:commit.commit.author.email:Concat:" type="V_WString" />
+            <Field name="commit_commit_author_date" size="512" source="CrossTab:Header:JSON_Name:commit.commit.author.date:Concat:" type="V_WString" />
+            <Field name="commit_commit_committer_name" size="512" source="CrossTab:Header:JSON_Name:commit.commit.committer.name:Concat:" type="V_WString" />
+            <Field name="commit_commit_committer_email" size="512" source="CrossTab:Header:JSON_Name:commit.commit.committer.email:Concat:" type="V_WString" />
+            <Field name="commit_commit_committer_date" size="512" source="CrossTab:Header:JSON_Name:commit.commit.committer.date:Concat:" type="V_WString" />
+            <Field name="protected" size="512" source="CrossTab:Header:JSON_Name:protected:Concat:" type="V_WString" />
+            <Field name="protection_enabled" size="512" source="CrossTab:Header:JSON_Name:protection.enabled:Concat:" type="V_WString" />
+            <Field name="protection_url" size="512" source="CrossTab:Header:JSON_Name:protection_url:Concat:" type="V_WString" />
+            <Field name="commit_sha" size="512" source="CrossTab:Header:JSON_Name:commit.sha:Concat:" type="V_WString" />
+            <Field name="commit_commit_tree_sha" size="512" source="CrossTab:Header:JSON_Name:commit.commit.tree.sha:Concat:" type="V_WString" />
+            <Field name="_links_html" size="512" source="CrossTab:Header:JSON_Name:_links.html:Concat:" type="V_WString" />
+            <Field name="_links_self" size="512" source="CrossTab:Header:JSON_Name:_links.self:Concat:" type="V_WString" />
+            <Field name="commit_url" size="512" source="CrossTab:Header:JSON_Name:commit.url:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="..\GetLastCommit.yxmc" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="618" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (3)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="618" y="258" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="714" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output5</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="API Response" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Question" />
+      <Destination ToolID="4" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="4" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (3)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (5)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>GetLast_Batch</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="346fd3c3-fc91-40f3-96fd-121b4ff3f811" />
+      <Telemetry>
+        <PreviousWorkflowId value="2797f036-4b65-407d-b0b1-38f451583567" />
+        <OriginWorkflowId value="2797f036-4b65-407d-b0b1-38f451583567" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="4" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/Value[@name='Text Box (44)']</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Repository</Description>
+              <Name>Control Parameter (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (5)</Description>
+              <Name>Macro Output (5)</Name>
+              <ToolId value="5" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (3)</Name>
+            <Description>Repository</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="5" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

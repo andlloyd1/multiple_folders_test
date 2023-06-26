@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="462" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Radio Button (324)">False</Value>
+          <Value name="Drop Down (325)" />
+          <Value name="Drop Down (328)" />
+          <Value name="Radio Button (323)">True</Value>
+          <Value name="Text Box (341)">githubmacro-testing</Value>
+          <Value name="Check Box (286)">False</Value>
+          <Value name="Text Box (43)">andlloyd1</Value>
+          <Value name="Text Box (44)">githubmacro-testing</Value>
+          <Value name="Text Box (120)">main</Value>
+          <Value name="Check Box (123)">False</Value>
+          <Value name="Text Box (219)">Commit message here</Value>
+          <Value name="Text Box (41)">https://api.github.com/</Value>
+          <Value name="Text Box (118)">4860C40A0F5BE3AB73A0E26F6FF40D4922829A9FBF463A192927AD90AD21335FCFFD7481622D87D9D7D72F11932A8C536EDB78B857B04072EC13243316253FF8B9B31ACB1DB0CBA912C87484F186445137CF32875A4E497ACAA7316F8F624DCCC7D45B50768F1F44AD701ECBD387836948BB8C828AF9A1131F8B6C8FDCB155140DB431221AE4F57C18CFBE8382F2CBF6D5B6832D62736E6187F63F8193B0B91003A8C5AFD6E312AC0362E189A3FB5D884603B64B41F00030D6EF2B57B8753384E447BB090546CB4E644B696E68C37578F8E6F58A88B275657CF7ED2E81DAA9C9BC84D5F35584A210FBA01B2991459392F5F10C91F9B7DD2D61A961D78E57B7842DACFDCA8ABDE685016463925B3DB6E775C6DFA82366DA24162762E6EFC700C7FB4B43A3A2687D851F167D5426D643B08418613984540B8B784ED1F110DEA9D3EFD4C6EE4AEB002C8242B5A087FA7CD0A93BFD03A28E3</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="..\GitHubCommit_Combined.yxmc" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="594" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="10" Connection="Output254" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Combined_SelfCommit_Test</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="10a864c2-721f-4de8-bff2-062237c4796c" />
+      <Telemetry>
+        <PreviousWorkflowId value="656140ec-94f9-41b4-8e3c-15607bdf6eb0" />
+        <OriginWorkflowId value="656140ec-94f9-41b4-8e3c-15607bdf6eb0" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
